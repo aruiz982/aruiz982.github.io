@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/maps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/statics.css">
+    
     <title>1_Statics</title>
 </head>
 <body>
@@ -15,7 +23,7 @@
                 <p class="contact-info">+34 639 44 04 66</p>
             </div>
             <div class="dropdown">
-                <img class="dropbtn" src="./img/puntos_menu.svg" />
+                <span class="dropbtn">Menu</span>
                 <div class="dropdown-content">
                     <a href="./index.html">Home</a>
                     <a href="./statics.html">1_Statics</a>
@@ -27,83 +35,73 @@
         </div>
     </nav>
     <main>
-        <section class="section-1">
-            <div class="background"></div>
-            <h1 class="title">1_Statics</h1>
-                <div class="container">
-                    <div class="block-1">
-                        <h2 class="article-name">'Si me cambio de piso, será a algo peor': por qué vivimos en menos espacio que hace años
-                        </h2>
-                        <h2 class="article-name-og">'If I move out, it will be to somewhere worse': why we live in less space than before</h2>
-                        <div class="text">
-                            <p class="paragraph">The articles shows how Spanish people, in the last years, have ended up living in smaller spaces than they did in the past. It is illustrated with the example of Madrid, to which the maps belong.</p>
-                            <p class="paragraph">The cartography was extracted from the Catastro website, which include all buildings in Spain, with the Python library requests. It was later transformed into a geojson file with QGIS, where it was also coloured, depending on the year of construction. The rest of the editing was made with Figma.</p>
-                            <p class="paragraph">This piece helped me and my team understand how to operate this datebase, which we later used to build a map with all swimming pools in the country or the heating demand map.</p>
+        <section class="section">
+            <div class="section-block" id="flats">
+                <div class="img_wrap"><img class="section-img" src="./img/estaticos_pisos/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">'If I move out, it will be to somewhere worse': why we live in less space than before</h2>
+                    <h2 class="article-name-og">'Si me cambio de piso, será a algo peor': por qué vivimos en menos espacio que hace años</h2>
+                    <p class="paragraph">The articles shows how Spanish people, in the last years, have ended up living in smaller spaces than they did in the past. It is illustrated with the example of Madrid, to which the map belongs.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
                         </div>
-                        <span class="link"><a href="https://www.elconfidencial.com/inmobiliario/2023-11-19/si-cambio-piso-peor-vivimos-menos-espacio_3776330/">link</a></span>
+                        <p class="toolsBox js__toolsBox">Python to scrape the website and extract all information. Figma to create the maps.</p>
                     </div>
-                    <div class="block-2">
-                        <img src="./img/estaticos_pisos/1.PNG" alt="">
-                        <img src="./img/estaticos_pisos/2.PNG" alt="">
-                    </div>
-                </div>
-        </section>
-        <section class="section-2">
-            <div class="background"></div>
-            <div class="container">
-                <div class="block-1">
-                    <h2 class="article-name">El plan para convertir Granada en la tercera ciudad española: 'Solo lo impide la clase política'</h2>
-                    <h2 class="article-name-og">The plan to transform Granada into the third biggest city: 'Only politicians are against us'</h2>
-                    <div class="text">
-                        <p class="paragraph">Granada is the 20th biggest city in Spain, in terms of population. The plan an association from the city is to integrate 44 nearby towns to create a more populated and extensive surface that can collect more money and, therefore, have better public services.</p>
-                        <p class="paragraph">There are two graphics in this piece: one comparing of big The Great Granada would be, compared in terms of surface and population to other Spanish towns, such as Badajoz or Murcia. The other shows the borders of the imaginary new city, as well as the population that it now has and what it would have with the fusion. It all was made with Figma.</p>
-                    </div>
-                    <span class="link"><a href="https://www.elconfidencial.com/espana/andalucia/2023-11-13/gran-granada-conurbacion-fusion-44-pueblos_3770748/">link</a></span>
-                </div>
-                <div class="block-3">
-                    <img src="./img/estaticos_granada/1.PNG" alt="">
-                    <img src="./img/estaticos_granada/2.PNG" alt="">
                 </div>
             </div>
-        </section>
-        <section class="section-1">
-            <div class="background"></div>
-            <div class="container">
-                <div class="block-1">
-                    <h2 class="article-name">Hasta 122 días al año con el aire puesto: así va a subir la factura de la luz según dónde vivas
-                    </h2>
-                    <h2 class="article-name-og">Up to 122 days with your AC on: this is how electricity bill is going to increase, depending on where you live</h2>
-                    <div class="text">
-                        <p class="paragraph">The article is inspired by a piece from The Washington Post in which they tried to figure out how many days of AC where necessary in each city of the US if temperature increased the way they are doing now, due to climate change.</p>
-                        <p class="paragraph">We tried to do a similar article for the Spanish case, since, given its location, the damage that climate change can cause to the country is bigger than in other European countries. We worked with data from AEMET and a grid that we used to create the evolution maps and that helped us concentrate the information. All the data analysis was made with Python.</p>
-                        <p class="paragraph">The maps were made with QGIS and later edited with Figma. On the other hand, the small multiples for the cities where created with R, later exported as pdf and edited in Figma, as well.</p>
+
+            <div class="section-block reverse">
+                <div class="img_wrap"><img class="section-img" src="./img/estaticos_granada/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">The plan to transform Granada into the third biggest city: 'Only politicians are against us'</h2>
+                    <h2 class="article-name-og">El plan para convertir Granada en la tercera ciudad española: 'Solo lo impide la clase política'</h2>
+                    <p class="paragraph">Granada is the 20th biggest city in Spain, in terms of population. The plan an association from the city is to integrate 44 nearby towns to create a more populated and extensive surface that can collect more money and, therefore, have better public services.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
+                        </div>
+                        <p class="toolsBox js__toolsBox">Figma to create the infographics.</p>
                     </div>
-                    <span class="link"><a href="https://www.elconfidencial.com/medioambiente/clima/2023-10-03/aumento-temperaturas-aire-acondicionado_3746530/">link</a></span>
-                </div>
-                <div class="block-2">
-                    <img src="./img/estaticos_aire/1.PNG" alt="">
-                    <img src="./img/estaticos_aire/2.PNG" alt="">
                 </div>
             </div>
-        </section>
-        <section class="section-2">
-            <div class="background"></div>
-            <div class="container">
-                <div class="block-1">
-                    <h2 class="article-name">Andalucía ya no cultiva arroz: así ha cambiado la agricultura en España tras dos años de sequía</h2>
-                    <h2 class="article-name-og">Andalucía no longer cultivates rice: this is how agriculture has changed after a two year drought</h2>
-                    <div class="text">
-                        <p class="paragraph">The lack of rain in Spain has severely affected one of its most valued assets: its agriculture. It has affected even more all those crops that had been previously rain-fed and are now irrigated, mostly because farmers can get bigger profits from them.</p>
-                        <p class="paragraph">The information was extracted from the Spanish Ministry of Agriculture and all tables where clean with Excel. The maps were extracted from an API belonging to Eurostat with the library requests in Python. The geojsons resulting where imported to QGIS, where they were edited and exported as images. The final touches, as well as the other static graphic included in the piece were made with Figma.</p>
+
+            <div class="section-block" id="airC">
+                <div class="img_wrap"><img class="section-img" src="./img/estaticos_aire/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">Up to 122 days with your AC on: this is how electricity bill is going to increase, depending on where you live</h2>
+                    <h2 class="article-name-og">Hasta 122 días al año con el aire puesto: así va a subir la factura de la luz según dónde vivas</h2>
+                    <p class="paragraph">The article is inspired by a piece from The Washington Post in which they tried to figure out how many days of AC where necessary in each city of the US if temperature increased the way they are doing now, due to climate change.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
+                        </div>
+                        <p class="toolsBox js__toolsBox">Python to extract the information from AEMET's API. Python to clean the data. Figma to create the small multiples and the maps.</p>
                     </div>
-                    <span class="link"><a href="https://www.elconfidencial.com/empresas/2024-03-10/andalucia-cultiva-arroz-agricultura-anos-sequia_3844397/">link</a></span>
                 </div>
-                <div class="block-3">
-                    <img src="./img/estaticos_regadio/1.PNG" alt="">
-                    <img src="./img/estaticos_regadio/2.PNG" alt="">
+            </div>
+
+            <div class="section-block reverse">
+                <div class="img_wrap"><img class="section-img" src="./img/estaticos_regadio/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">Andalucía no longer cultivates rice: this is how agriculture has changed after a two year drought</h2>
+                    <h2 class="article-name-og">Andalucía ya no cultiva arroz: así ha cambiado la agricultura en España tras dos años de sequía</h2>
+                    <p class="paragraph">The lack of rain in Spain has severely affected one of its most valued assets: its agriculture. It has affected even more all those crops that had been previously rain-fed and are now irrigated, mostly because farmers can get bigger profits from them.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
+                        </div>
+                        <p class="toolsBox js__toolsBox">Python to get the map's through Eurostat's API and clean the data. Figma to create the maps and graphics.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

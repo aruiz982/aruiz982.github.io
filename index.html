@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Ruiz - Data Reporter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main_page.css">
 </head>
 <body>
@@ -15,7 +21,7 @@
                 <p class="contact-info">+34 639 44 04 66</p>
             </div>
             <div class="dropdown">
-                <img class="dropbtn" src="./img/puntos_menu.svg" />
+                <span class="dropbtn">Menu</span>
                 <div class="dropdown-content">
                     <a href="./index.html">Home</a>
                     <a href="./statics.html">1_Statics</a>
@@ -27,30 +33,81 @@
         </div>
     </nav>
     <main>
-        <section class="slide">
-            <div class="background"></div>
-                <div class="blocks">
-                    <div class="block-1">
-                        <div class="names">
-                            <h1 class="name">
-                                Ana Ruiz
-                            </h1>
-                            <h3 class="job">
-                                Graphics and Data Reporter
-                            </h3>
+        <section class="main-page--cover">
+            <h1 class="main-page--cover--title">
+                Ana Ruiz
+            </h1>
+            <h3 class="main-page--cover--job">
+                Graphics and data reporter based in Madrid</span>
+            </h3>
+        </section>
+        <section class="main-page--highlights">
+            <h1 class="main-page--highlights-title">
+                Highlights
+            </h1>
+            <ul class="main-page--highlights--ul">
+                <a href="maps.html#movilidad" class="main-page--highlights--link">
+                    <li class="main-page--highlights--li">
+                        <img src="img/mapas_movilidad/1.jpg" alt="" class="highlights--img">
+                        <div class="main-page--highlights--wrap">
+                            <p class="main-page--highlights--category">(Maps)</p>
+                            <h1 class="highlights--name">Where do you neighbours work? The map of all mandatory journeys</h1>
+                            <p class="highlights--name--eng">¿Dónde trabajan tus vecinos? El mapa de los trayectos obligados en cada municipio</p>
                         </div>
-                        <div class="social-networks">
-                            <a href="https://twitter.com/anabelruizaire"><img src="./img/twitter_Mesa de trabajo 1.svg" alt="Twitter"></a>
-                            <a href="https://www.instagram.com/anadelarue98/?igsh=MWdvbm9jaDBtYTlpOQ%3D%3D"><img src="./img/instagram_Mesa de trabajo 1 copia.svg" alt="Instagram"></a>
-                            <a href="https://www.linkedin.com/in/ana-ruiz-espinar-171721197/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./img/linkedin_Mesa de trabajo 1 copia 2.svg" alt="Linkedin"></a>
+                    </li>
+                </a>
+                <a href="maps.html#densidad" class="main-page--highlights--link">
+                    <li class="main-page--highlights--li">
+                        <img src="img/mapas_densidad/1.jpg" alt="" class="highlights--img">
+                        <div class="main-page--highlights--wrap">
+                            <p class="main-page--highlights--category">(Maps)</p>
+                            <h1 class="highlights--name">The map of all European population: how many people live in your square kilometre?</h1>
+                            <p class="highlights--name--eng">El mapa de toda la población europea: ¿cuánta gente vive en tu kilómetro cuadrado?</p>
                         </div>
-                    </div>
-                    <div class="block-2">
-                            <img src="./img/estaticos_regadio/2.PNG" alt="">
-                            <img src="./img/mapas_alquiler/2.PNG" alt="">
-                            <img src="./img/mapas_movilidad/1.png" alt="">
-                    </div>
-                </div>
+                    </li>
+                </a>
+                <a href="statics.html#flats" class="main-page--highlights--link">
+                    <li class="main-page--highlights--li">
+                        <img src="img/estaticos_pisos/1.jpg" alt="" class="highlights--img">
+                        <div class="main-page--highlights--wrap">
+                            <p class="main-page--highlights--category">(Statics)</p>
+                            <h1 class="highlights--name">'If I move out, it will be to somewhere worse': why we live in less space than before</h1>
+                            <p class="highlights--name--eng">'Si me cambio de piso, será a algo peor': por qué vivimos en menos espacio que hace años</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="statics.html#airC" class="main-page--highlights--link">
+                    <li class="main-page--highlights--li">
+                        <img src="img/estaticos_aire/1.jpg" alt="" class="highlights--img">
+                        <div class="main-page--highlights--wrap">
+                            <p class="main-page--highlights--category">(Statics)</p>
+                            <h1 class="highlights--name">Up to 122 days with your AC on: this is how electricity bill is going to increase, depending on where you live</h1>
+                            <p class="highlights--name--eng">Hasta 122 días al año con el aire puesto: así va a subir la factura de la luz según dónde vivas</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="others.html#taylor" class="main-page--highlights--link">
+                    <li class="main-page--highlights--li">
+                        <img src="img/otros_taylor/1.JPG" alt="" class="highlights--img">
+                        <div class="main-page--highlights--wrap">
+                            <p class="main-page--highlights--category">(Others)</p>
+                            <h1 class="highlights--name">Why can't you sing any song from the most streamed artist in the world</h1>
+                            <p class="highlights--name--eng">Por qué no puedes cantar ninguna canción de la artista más escuchada del mundo</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="others.html#spotify" class="main-page--highlights--link">
+                    <li class="main-page--highlights--li">
+                        <img src="img/otros_spotify/1.jpg" alt="" class="highlights--img">
+                        <div class="main-page--highlights--wrap">
+                            <p class="main-page--highlights--category">(Others)</p>
+                            <h1 class="highlights--name">How nº1 hits have changed in Spain since 1980</h1>
+                            <p class="highlights--name--eng">Cómo han cambiado los números 1 en España desde 1980</p>
+                        </div>
+                    </li>
+                </a>
+
+            </ul>
         </section>
     </main>
 </body>

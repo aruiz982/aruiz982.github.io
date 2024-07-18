@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/maps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>2_Maps</title>
 </head>
 <body>
@@ -15,7 +21,7 @@
                 <p class="contact-info">+34 639 44 04 66</p>
             </div>
             <div class="dropdown">
-                <img class="dropbtn" src="./img/puntos_menu.svg" />
+                <span class="dropbtn">Menu</span>
                 <div class="dropdown-content">
                     <a href="./index.html">Home</a>
                     <a href="./statics.html">1_Statics</a>
@@ -27,83 +33,74 @@
         </div>
     </nav>
     <main>
-        <section class="section-1">
-            <div class="background"></div>
-            <h1 class="title">2_Maps</h1>
-                <div class="container">
-                    <div class="block-1">
-                        <h2 class="article-name">El mapa del gasto en calefacción, edificio a edificio: ¿pagas más que tu vecino?</h2>
-                        <h2 class="article-name-og">The heating expenditure map: Do you pay more than your neighbour?</h2>
-                        <div class="text">
-                            <p class="paragraph">The map shows the heating costs of Spanish homes, how much the same thing would cost if the building was more energy-efficient and how much the renovation would be. The article pretends to aim Spaniards to invest in their homes so they would not need as much heating power as they do, which would benefit their finances and the environment.</p>
-                            <p class="paragraph">The data to create the map was extracted from Catastro and had to be reduced, so Mapbox could process it. For this, I used geopandas, a Python library for geospatial analysis and, because some files where really heavy, the command line with some libraries, like jq. After this, I uploaded the map to the server with Mapbox CLI and later styled it with Mapbox GL JS.</p>
-                            <p class="paragraph">It was quite a challenge, considering the files we were working with were 12Gb heavy and that we had never made a project of this characteristics. </p>
+        <section class="section">
+            <div class="section-block">
+                <div class="img_wrap"><img class="section-img" src="./img/mapas_calefaccion/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">The heating expenditure map: Do you pay more than your neighbour?</h2>
+                    <h2 class="article-name-og">El mapa del gasto en calefacción, edificio a edificio: ¿pagas más que tu vecino?</h2>
+                    <p class="paragraph">The map shows the heating costs of Spanish homes, how much the same thing would cost if the building was more energy-efficient and how much the renovation would be. The article pretends to aim Spaniards to invest in their homes so they would not need as much heating power as they do, which would benefit their finances and the environment.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/economia/2024-01-11/mapa-eficiencia-energetica-calefaccion-edificio-rehabilitacion_3796426/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
                         </div>
-                        <span class="link"><a href="https://www.elconfidencial.com/economia/2024-01-11/mapa-eficiencia-energetica-calefaccion-edificio-rehabilitacion_3796426/">link</a></span>
+                        <p class="toolsBox js__toolsBox">Python and Mapshaper in the command line to filter the information and Mapbox to create the map.</p>
                     </div>
-                    <div class="block-2">
-                        <img src="./img/mapas_calefaccion/2.PNG" alt="">
-                        <img src="./img/mapas_calefaccion/1.PNG" alt="">
-                    </div>
-                </div>
-        </section>
-        <section class="section-2">
-            <div class="background"></div>
-            <div class="container">
-                <div class="block-1">
-                    <h2 class="article-name">¿Dónde trabajan tus vecinos? El mapa de los trayectos obligados en cada municipio</h2>
-                    <h2 class="article-name-og">Where do you neighbours work? The map of all mandatory journeys</h2>
-                    <div class="text">
-                        <p class="paragraph">The Spanish Ministry of Transportation had published very detailed information of how many people had to mandatorily move and where they had to go each day (they considered people that had to go to work, to university or school). We wanted to do something with the information and ended up creating this map with the most frecuent journeys that Spaniards made each day.</p>
-                        <p class="paragraph">For this piece, we extracted the data and cartography from the ministry and analysed it geopandas in Python. We needed to merge both the csv and the geojson in order to get a way of painting all features. We extracted the centroids and later connected all lines with the information we had.</p>
-                        <p class="paragraph">Later, we created the map with Mapbox. It included all journeys that Spaniards did with frequency of three weeks a month or more, the distances they had to cover and the most frequent destinations, considering every town available.</p>
-                    </div>
-                    <span class="link"><a href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/">link</a></span>
-                </div>
-                <div class="block-3">
-                    <img src="./img/mapas_movilidad/2.png" alt="">
-                    <img src="./img/mapas_movilidad/1.png" alt="">
                 </div>
             </div>
-        </section>
-        <section class="section-1">
-            <div class="background"></div>
-            <div class="container">
-                <div class="block-1">
-                    <h2 class="article-name">¿Tus vecinos están de alquiler o han comprado? Así es la vivienda en cada barrio</h2>
-                    <h2 class="article-name-og">Do your neighbours rent or own their homes? This is the housing situation in each neighbourhood</h2>
-                    <div class="text">
-                        <p class="paragraph">This map was a complement to a housing piece to inform of the new census data regarding this a more topics. The map offers four different views: one for second homes, one for rental homes, one for one-person households and one for more than people households.</p>
-                        <p class="paragraph">The piece was relatively easy to do and the only obstacle we found was the publishing date: we had to publish the article not long after the Spanish Statistics Institute released the information.</p>
-                        <p class="paragraph">The data was analysed with the library pandas in Python and later joined to the cartography we had in Mapbox. We later created the map with the same tool.</p>
+
+            <div class="section-block reverse" id="movilidad">
+                <div class="img_wrap"><img class="section-img" src="./img/mapas_movilidad/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">Where do you neighbours work? The map of all mandatory journeys</h2>
+                    <h2 class="article-name-og">¿Dónde trabajan tus vecinos? El mapa de los trayectos obligados en cada municipio</h2>
+                    <p class="paragraph">The Spanish Ministry of Transportation had published very detailed information of how many people had to mandatorily move and where they had to go each day (they considered people that had to go to work, to university or school). We wanted to do something with the information and ended up creating this map with the most frecuent journeys that Spaniards made each day.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
+                        </div>
+                        <p class="toolsBox js__toolsBox">Python to manipulate the information and to create the lines from the centroids given. Mapbox to create the map.</p>
                     </div>
-                    <span class="link"><a href="https://www.elconfidencial.com/inmobiliario/residencial/2023-06-30/vivienda-alquiler-compra-hogares-secundarias-calle_3681453/">link</a></span>
-                </div>
-                <div class="block-2">
-                    <img src="./img/mapas_alquiler/1.PNG" alt="">
-                    <img src="./img/mapas_alquiler/2.PNG" alt="">
                 </div>
             </div>
-        </section>
-        <section class="section-2">
-            <div class="background"></div>
-            <div class="container">
-                <div class="block-1">
-                    <h2 class="article-name">España a remojo: el mapa de todas las piscinas, calle a calle</h2>
-                    <h2 class="article-name-og">Spain soaking wet: the map of all pools, street by street</h2>
-                    <div class="text">
-                        <p class="paragraph">This was a very summer-like article that we published last year about how all swimming pools in Spain are distributed, where the bigger ones are located and also to show the lack of public pools in Spain.</p>
-                        <p class="paragraph">This time, we also worked with information from Catastro, that has separate files for only this type of construction. We wanted to make something easy and fun, but we could not.</p>
-                        <p class="paragraph">The map was once again created with Mapbox. This time, we could not paint the silhouettes and decided to get the centroids with QGIS and display those instead. All close-ups are created with QGIS that were later edited with Figma.</p>
+
+            <div class="section-block" id="densidad">
+                <div class="img_wrap"><img class="section-img" src="./img/mapas_densidad/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">The map of all European population: how many people live in your square kilometre?</h2>
+                    <h2 class="article-name-og">El mapa de toda la población europea: ¿cuánta gente vive en tu kilómetro cuadrado?</h2>
+                    <p class="paragraph">For this map we used a population grid provided by Eurostat. Our main goal was to show in a different form how population is distributed in Europe and how it has changed in the last ten years.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/mundo/europa/2024-05-21/mapa-poblacion-europa-gente-kilometro-cuadrado_3884367/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
+                        </div>
+                        <p class="toolsBox js__toolsBox">Python to manipulate the data and join all geojsons involved. The command line to transform the file to .mbtiles. Mapbox to create the map.</p>
                     </div>
-                    <span class="link"><a href="https://www.elconfidencial.com/espana/2023-07-18/mapa-piscinas-espana-calle_3701074/">link</a></span>
                 </div>
-                <div class="block-3">
-                    <img src="./img/mapas_piscinas/2.PNG" alt="">
-                    <img src="./img/mapas_piscinas/1.PNG" alt="">
+            </div>
+
+            <div class="section-block reverse">
+                <div class="img_wrap"><img class="section-img" src="./img/mapas_piscinas/1.jpg" alt=""></div>
+                <div class="section-wrap">
+                    <h2 class="article-name">Spain soaking wet: the map of all pools, street by street</h2>
+                    <h2 class="article-name-og">España a remojo: el mapa de todas las piscinas, calle a calle</h2>
+                    <p class="paragraph">This was a very summer-like article that we published last year about how all swimming pools in Spain are distributed, where the bigger ones are located and also to show the lack of public pools in Spain.
+                                        This time, we also worked with information from Catastro, that has separate files for only this type of construction. We wanted to make something easy and fun, but in the end we did not.</p>
+                    <div class="links--section">
+                        <div class="links--section--links">
+                            <a class="link-text" href="https://www.elconfidencial.com/espana/2023-07-18/mapa-piscinas-espana-calle_3701074/" target="_blank">Link</a>
+                            <button class="tools-text js__toolsText">Tools used</button>
+                        </div>
+                        <p class="toolsBox js__toolsBox">Python to scrape the website from which the data was extracted and to reduce its size. Mapbox to create the map.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
