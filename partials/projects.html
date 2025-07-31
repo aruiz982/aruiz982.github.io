@@ -10,7 +10,7 @@
     <title>Ana Ruiz. Projects</title>
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header">
         <nav class="nav__header">
             <a href="../index.html" class="nav__header--element js__link">Home</a>
             <a href="projects.html" class="nav__header--element js__link selected">Projects</a>
@@ -18,190 +18,221 @@
         </nav>
     </header>
     <main class="main">
-        <article class="article first js__article">
-            <div class="article__small js__articleSmall hidden">
-                <img src="../imgs/small_imgs/small_temp_agua.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">Where is sea water colder, in Llanes or in Marbella? We have a full guide to explain it</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">Where is sea water colder, in Llanes or in Marbella? We have a full guide to explain it</h1>
-                        <p class="article__full--header--title--es">¿Dónde está más fría el agua, en Llanes o en Marbella? Tenemos la guía de baño definitiva</p>
+        <div class="wrap__second__job">
+            <h1 class="wrap__job__title">CREAF / Meteoclimática. Marzo de 2025 - presente</h1>
+            <article class="article first js__article">
+                <div class="article__small js__articleSmall hidden">
+                    <img src="../imgs/small_imgs/26_06_2025_olas_de_calor_aqui_la_tierra.png" alt="" class="article__small--img">
+                    <h1 class="article__small--title">Meteoclimática. How to talk about climate change in TV's weather forecasts</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
+                </div>
+                <div class="article__full js__articleFull">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">Meteoclimática. How to talk about climate change in TV's weather forecasts</h1>
+                            <p class="article__full--header--title--es">Meteoclimática. Cómo hablar de cambio climático en los espacios del tiempo en televisión</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
-                </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_temp_agua.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">For the summer season, we explored sea surface temperatures across all Spanish coastal municipalities. Using a dataset with 0.5° spaced points, we aggregated the average water temperatures by municipality and province. We also analyzed historical records of maximum and minimum sea temperatures. This data allowed us to provide a comprehensive view of coastal water conditions, helping readers understand regional variations. The article emphasized how the changing water temperatures can affect tourism and local activities, particularly in popular summer destinations. Additionally, it shed light on broader environmental trends, linking the findings to potential impacts of climate change on Spanish coastal regions.</p>
-                    <p class="article__full--body--technologies">The data for sea temperatures were extracted via the Copernicus Marine Service API using a command-line library. All data analysis was conducted in Python, utilizing xarray to open .nc files, and pandas and geopandas for cleaning geographic files and grouping data by months. To link the geographic points from the dataset with municipal polygons, a proximity join function in QGIS was used. This combination of tools allowed for a precise analysis of sea surface temperatures, providing detailed results for each Spanish coastal municipality.
-                        <a href="https://www.elconfidencial.com/espana/2024-08-03/agua-fria-agua-caliente-playa-espana-guia-bano-definitiva_3935335/" class="article__full--body--link">Link to article</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_taylor.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">Why do you not recognize any song from the most streamed artist worldwide?</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">Why do you not recognize any song from the most streamed artist worldwide?</h1>
-                        <p class="article__full--header--title--es">Por qué no conoces ninguna canción de la artista más escuchada del mundo</p>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/26_06_2025_olas_de_calor_aqui_la_tierra.png" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">In Meteoclimática, our goal is mainly one: to encourage meteorologists to include climate change related topics in TV's weather forecasts. With this we want to introduce a topic in a space that viewers (more and more digital) still consult almost daily and leaded by presenters that have their trust.
+The project grows more and more important considering the thoughts on climate change that are spread nowadays in social media and that make the topic, not so controverted few years ago, the key for many voters and political parties supporters.</p>
+                        <p class="article__full--body--technologies">Creating graphics for television is a hard task, considering the little time that meteorologists have and the reduced attention span that viewers present. Also, topics can be a bit controversial sometimes.
+We always try to make things as simple as possible and rely on open sources, like AEMET or Copernicus. The data that we extract is later analysed, all things considered, and later transformed into simple static graphics that the general public can easily understand and absorb, creating the highest impact.
+                            <a href="https://drive.google.com/drive/folders/1sVBxYKTv7uZLehq-tzklFWdCr83_HNRp?usp=drive_link" class="article__full--body--link">Link to article</a>
+                        </p>
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                 </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_taylor.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">During Taylor Swift's European tour, we investigated why Spanish audiences found it difficult to remember her songs. The study identified two primary reasons: her unusually long verses compared to other pop artists like Ariana Grande, and her minimalist musical style, analyzed through Spotify's music metrics. We also pinpointed two key factors behind her success: the relatable themes in her lyrics that resonate with audiences, and her self-referential songwriting, which creates a unique "song universe" for fans. This combination of musical complexity and emotional connection explains her widespread popularity despite the challenges some listeners face in recalling her lyrics.</p>
-                    <p class="article__full--body--technologies">Data were manually extracted from Genius, but all datasets were analyzed with Python, particularly for text analysis. Libraries like re, pandas, and numpy were used to break down the words and verses. To analyze the musical metrics, Python and Spotify's API were employed. Several visualizations were created using the ggplot2 library in R, providing a clear representation of the song structures and patterns that contribute to Taylor Swift's style and success.
-                        <a href="https://www.elconfidencial.com/cultura/2024-05-25/cancion-taylor-swift-artista-mas-escuchada-mundo_3889580/" class="article__full--body--link">Link to article</a>
-                    </p>
+            </article>
+        </div>
+        <div class="wrap__first__job">
+            <h1 class="wrap__job__title">El Confidencial. Octubre 2022 - enero 2025</h1>
+            <article class="article first js__article">
+                <div class="article__small js__articleSmall hidden">
+                    <img src="../imgs/small_imgs/small_temp_agua.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">Where is sea water colder, in Llanes or in Marbella? We have a full guide to explain it</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
                 </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_densidad_poblacion.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">The map of European population: do you live in the most populated square kilometre of the continent?</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">The map of European population: do you live in the most populated square kilometre of the continent?</h1>
-                        <p class="article__full--header--title--es">El mapa de la población en Europa: ¿vives en el kilómetro cuadrado con más gente?</p>
+                <div class="article__full js__articleFull">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">Where is sea water colder, in Llanes or in Marbella? We have a full guide to explain it</h1>
+                            <p class="article__full--header--title--es">¿Dónde está más fría el agua, en Llanes o en Marbella? Tenemos la guía de baño definitiva</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
-                </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_densidad_poblacion.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">We examined Europe's population density using a detailed grid of one square kilometer, focusing on how population distribution has shifted over the last decade. Although this study was part of the broader Pulse program with European journalists, we centered on Spain. The article highlighted factors like average population age, dependency ratios, unemployment rates, and income levels to explain demographic trends. It offered insight into regional differences and urbanization patterns. The data allowed us to discuss how various socio-economic factors influence where and how people live in Spain, as well as broader implications for infrastructure, services, and policy planning across the country.</p>
-                    <p class="article__full--body--technologies">We worked with two population grids from Eurostat (2011 and 2021), enabling comparisons over a decade. These files were handled using Python and geopandas. Since the grids only contained population data per square kilometer, additional data from Eurostat on European municipalities were integrated through spatial joins, also using geopandas. The main map was created using Mapbox GL JS, while static maps were generated in QGIS and Mapbox. This allowed for a detailed spatial analysis of population changes and trends across Spain and Europe.
-                        <a href="https://www.elconfidencial.com/mundo/europa/2024-05-21/mapa-poblacion-europa-gente-kilometro-cuadrado_3884367/" class="article__full--body--link">Link to article</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_juegos_agua.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">The water games that can dry out Europe's pantry</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">The water games that can dry out Europe's pantry</h1>
-                        <p class="article__full--header--title--es">Los juegos del agua que pueden secar la despensa de Europa</p>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_temp_agua.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">For the summer season, we explored sea surface temperatures across all Spanish coastal municipalities. Using a dataset with 0.5° spaced points, we aggregated the average water temperatures by municipality and province. We also analyzed historical records of maximum and minimum sea temperatures. This data allowed us to provide a comprehensive view of coastal water conditions, helping readers understand regional variations. The article emphasized how the changing water temperatures can affect tourism and local activities, particularly in popular summer destinations. Additionally, it shed light on broader environmental trends, linking the findings to potential impacts of climate change on Spanish coastal regions.</p>
+                        <p class="article__full--body--technologies">The data for sea temperatures were extracted via the Copernicus Marine Service API using a command-line library. All data analysis was conducted in Python, utilizing xarray to open .nc files, and pandas and geopandas for cleaning geographic files and grouping data by months. To link the geographic points from the dataset with municipal polygons, a proximity join function in QGIS was used. This combination of tools allowed for a precise analysis of sea surface temperatures, providing detailed results for each Spanish coastal municipality.
+                            <a href="https://www.elconfidencial.com/espana/2024-08-03/agua-fria-agua-caliente-playa-espana-guia-bano-definitiva_3935335/" class="article__full--body--link">Link to article</a>
+                        </p>
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                 </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_juegos_agua.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">Last summer's drought in Spain led to severe water restrictions for farmers, with public administrations limiting water supply to critical levels. This article explored the administrative mismanagement of public water resources, exacerbating the drought's effects. Additionally, it discussed how excessive water usage by farmers during wetter periods contributes to resource depletion in times of scarcity. The combination of poor regulation and unsustainable agricultural practices has deepened the crisis. The article emphasized the need for improved water governance and sustainable resource management to mitigate future impacts of climate change, ensuring both agricultural viability and the long-term preservation of water supplies.</p>
-                    <p class="article__full--body--technologies">Data for this article came from the Citizen Drought Observatory and the ESYRCE survey by the Ministry of Agriculture. Flourish and Datawrapper were used to create the visuals and charts, making the information accessible and easy to understand.
-                        <a href="https://www.elconfidencial.com/espana/2023-08-09/sequia-agricultura-regadio-consumo-agua-espana_3714707/" class="article__full--body--link">Link to article</a>
-                    </p>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_taylor.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">Why do you not recognize any song from the most streamed artist worldwide?</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
                 </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_isla.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">Chronic of an announced infidelity: el lenguage of "Temptation Island" gives out the cheaters</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">Chronic of an announced infidelity: el lenguage of "Temptation Island" gives out the cheaters</h1>
-                        <p class="article__full--header--title--es">Crónica de unos cuernos anunciados: el lenguaje de "La Isla de las tentaciones" delata a los infieles</p>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">Why do you not recognize any song from the most streamed artist worldwide?</h1>
+                            <p class="article__full--header--title--es">Por qué no conoces ninguna canción de la artista más escuchada del mundo</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
-                </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_isla.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">After a casual conversation at work, we decided to see if we could predict the behavior of contestants on the reality show La Isla de las Tentaciones based on their language use in early episodes. We identified key repeated words and phrases and analyzed how these were connected to certain behaviors. The study found specific words that could potentially indicate cheating within couples. By mapping out the most common language patterns, we aimed to predict future actions on the show. This exploration offered insight into how language reflects behavior and relationships, providing a fun yet analytical take on reality TV dynamics.</p>
-                    <p class="article__full--body--technologies">We downloaded all episodes and converted the audio into subtitles. Python was used with the webvtt library to open the subtitles and nltk for natural language processing. This allowed us to identify frequently repeated terms and analyze sentence structures. Further manual processes assigned phrases to individual contestants. Most of the visualizations were designed in Figma, with a few created in R using the ggplot2 library. This approach enabled a comprehensive linguistic analysis of the reality show's dynamics.
-                        <a href="https://www.elconfidencial.com/television/programas-tv/2024-03-15/isla-tentaciones-infidelidad-lenguaje-cuernos_3848863/" class="article__full--body--link">Link to article</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_desplazamientos_obligados.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">Where do your neighbours work? The map of all mandatory journeys for each town in Spain</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">Where do your neighbours work? The map of all mandatory journeys for each town in Spain</h1>
-                        <p class="article__full--header--title--es">¿Dónde trabajan tus vecinos? El mapa de los trayectos obligados en cada municipio</p>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_taylor.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">During Taylor Swift's European tour, we investigated why Spanish audiences found it difficult to remember her songs. The study identified two primary reasons: her unusually long verses compared to other pop artists like Ariana Grande, and her minimalist musical style, analyzed through Spotify's music metrics. We also pinpointed two key factors behind her success: the relatable themes in her lyrics that resonate with audiences, and her self-referential songwriting, which creates a unique "song universe" for fans. This combination of musical complexity and emotional connection explains her widespread popularity despite the challenges some listeners face in recalling her lyrics.</p>
+                        <p class="article__full--body--technologies">Data were manually extracted from Genius, but all datasets were analyzed with Python, particularly for text analysis. Libraries like re, pandas, and numpy were used to break down the words and verses. To analyze the musical metrics, Python and Spotify's API were employed. Several visualizations were created using the ggplot2 library in R, providing a clear representation of the song structures and patterns that contribute to Taylor Swift's style and success.
+                            <a href="https://www.elconfidencial.com/cultura/2024-05-25/cancion-taylor-swift-artista-mas-escuchada-mundo_3889580/" class="article__full--body--link">Link to article</a>
+                        </p>
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                 </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_movimientos_obligarios.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">Using data from MITMA and ECEPOV, we created a map of Spain’s regular commuting routes for work and study, analyzing the time spent traveling. The article highlighted how the COVID-19 pandemic had altered these patterns. It found that most Spaniards commute by car, often leading them to live on the outskirts of cities. In some cases, high-speed trains (AVE) played a significant role in long-distance commuting. The findings underscored how urban sprawl and a reliance on cars shaped commuting behaviors in Spain. The data also hinted at the broader effects of remote work trends and their impact on future mobility needs.</p>
-                    <p class="article__full--body--technologies">We worked with a CSV file containing commuting data and a geojson file with municipal centroids. These datasets were merged to create connections between municipalities, with Python used to extract lines representing commuting routes and calculate straight-line distances. The primary map was built using Mapbox GL JS, with filters based on travel distances, while additional charts were generated using Datawrapper, enhancing the visualization of commuting patterns across Spain.
-                        <a href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" class="article__full--body--link">Link to article</a>
-                    </p>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_densidad_poblacion.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">The map of European population: do you live in the most populated square kilometre of the continent?</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
                 </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_demanda_calefaccion.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">The map of heat expenditure, building by building: do you pay more that your neighbours?</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">The map of heat expenditure, building by building: do you pay more that your neighbours?</h1>
-                        <p class="article__full--header--title--es">El mapa del gasto en calefacción, edificio a edificio: ¿pagas más que tus vecinos?</p>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">The map of European population: do you live in the most populated square kilometre of the continent?</h1>
+                            <p class="article__full--header--title--es">El mapa de la población en Europa: ¿vives en el kilómetro cuadrado con más gente?</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
-                </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_demanda_calefaccion.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">The Ministry of Housing, in collaboration with a consulting firm, released a tool showing the heating demand for every building in Spain. We used this data to create our own map, incorporating the cost of renovations that would improve energy efficiency in older buildings. The article emphasized that Spain's housing stock is outdated, making it expensive to retrofit for better energy efficiency. The report called attention to the need for government support and awareness to tackle these challenges, especially as energy costs rise. It also discussed the environmental and economic benefits of upgrading Spain’s aging buildings to meet modern energy standards.</p>
-                    <p class="article__full--body--technologies">We scraped the property cadastre webpage using Python's beautiful soup to obtain building data, while heating demand data was extracted from the URBAN3R viewer, also through scraping. The datasets were combined using geopandas, but the large file size required optimization with Mapshaper and other command-line libraries. Additional charts were generated in Datawrapper using data from the 2011 Population and Housing Census, providing a comprehensive analysis of energy efficiency in Spain's building stock.
-                        <a href="https://www.elconfidencial.com/economia/2024-01-11/mapa-eficiencia-energetica-calefaccion-edificio-rehabilitacion_3796426/" class="article__full--body--link">Link to article</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article class="article js__article">
-            <div class="article__small js__articleSmall">
-                <img src="../imgs/small_imgs/small_aire_acondicionado.PNG" alt="" class="article__small--img">
-                <h1 class="article__small--title">Up to 122 with the AC on: this is how what your electricity bill will look like, depending on where you live</h1>
-                <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
-            </div>
-            <div class="article__full js__articleFull hidden">
-                <div class="article__full--header js__fullArrow">
-                    <div class="article__full--header--text">
-                        <h1 class="article__full--header--title">Up to 122 with the AC on: this is how what your electricity bill will look like, depending on where you live</h1>
-                        <p class="article__full--header--title--es">Hasta 122 días al año con el aire puesto: así va a subir la factura en España según dónde vivas</p>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_densidad_poblacion.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">We examined Europe's population density using a detailed grid of one square kilometer, focusing on how population distribution has shifted over the last decade. Although this study was part of the broader Pulse program with European journalists, we centered on Spain. The article highlighted factors like average population age, dependency ratios, unemployment rates, and income levels to explain demographic trends. It offered insight into regional differences and urbanization patterns. The data allowed us to discuss how various socio-economic factors influence where and how people live in Spain, as well as broader implications for infrastructure, services, and policy planning across the country.</p>
+                        <p class="article__full--body--technologies">We worked with two population grids from Eurostat (2011 and 2021), enabling comparisons over a decade. These files were handled using Python and geopandas. Since the grids only contained population data per square kilometer, additional data from Eurostat on European municipalities were integrated through spatial joins, also using geopandas. The main map was created using Mapbox GL JS, while static maps were generated in QGIS and Mapbox. This allowed for a detailed spatial analysis of population changes and trends across Spain and Europe.
+                            <a href="https://www.elconfidencial.com/mundo/europa/2024-05-21/mapa-poblacion-europa-gente-kilometro-cuadrado_3884367/" class="article__full--body--link">Link to article</a>
+                        </p>
                     </div>
-                    <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
                 </div>
-                <div class="article__full--body">
-                    <img src="../imgs/full_imgs/full_aire_acondicionado.PNG" alt="" class="article__full--body--img">
-                    <p class="article__full--body--description">With data from AEMET, we analyzed how often air conditioning was used across Spain's provinces during the spring and summer of 2023. Over 122 days, Sevilla emerged as the hottest region, experiencing 82 days with temperatures exceeding 32°C. The study also included future temperature projections using a 20-kilometer grid, showing how heatwaves may intensify in the coming years. The article highlighted the growing need for cooling in homes and businesses due to rising temperatures, pointing to the broader issue of climate change. It also touched on the economic and environmental challenges posed by the increased reliance on air conditioning in Spain.</p>
-                    <p class="article__full--body--technologies">Temperature projections were retrieved via Aemet’s API using Python, while temperature data were queried directly from their database using SQL. Visuals were created in Datawrapper, QGIS (with further editing in Figma for maps), and R (with Figma edits for evolution charts). This allowed for an in-depth examination of air conditioning use and future temperature trends across Spanish provinces.
-                        <a href="https://www.elconfidencial.com/medioambiente/clima/2023-10-03/aumento-temperaturas-aire-acondicionado_3746530/" class="article__full--body--link">Link to article</a>
-                    </p>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_juegos_agua.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">The water games that can dry out Europe's pantry</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
                 </div>
-            </div>
-        </article>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">The water games that can dry out Europe's pantry</h1>
+                            <p class="article__full--header--title--es">Los juegos del agua que pueden secar la despensa de Europa</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
+                    </div>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_juegos_agua.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">Last summer's drought in Spain led to severe water restrictions for farmers, with public administrations limiting water supply to critical levels. This article explored the administrative mismanagement of public water resources, exacerbating the drought's effects. Additionally, it discussed how excessive water usage by farmers during wetter periods contributes to resource depletion in times of scarcity. The combination of poor regulation and unsustainable agricultural practices has deepened the crisis. The article emphasized the need for improved water governance and sustainable resource management to mitigate future impacts of climate change, ensuring both agricultural viability and the long-term preservation of water supplies.</p>
+                        <p class="article__full--body--technologies">Data for this article came from the Citizen Drought Observatory and the ESYRCE survey by the Ministry of Agriculture. Flourish and Datawrapper were used to create the visuals and charts, making the information accessible and easy to understand.
+                            <a href="https://www.elconfidencial.com/espana/2023-08-09/sequia-agricultura-regadio-consumo-agua-espana_3714707/" class="article__full--body--link">Link to article</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_isla.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">Chronic of an announced infidelity: el lenguage of "Temptation Island" gives out the cheaters</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
+                </div>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">Chronic of an announced infidelity: el lenguage of "Temptation Island" gives out the cheaters</h1>
+                            <p class="article__full--header--title--es">Crónica de unos cuernos anunciados: el lenguaje de "La Isla de las tentaciones" delata a los infieles</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
+                    </div>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_isla.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">After a casual conversation at work, we decided to see if we could predict the behavior of contestants on the reality show La Isla de las Tentaciones based on their language use in early episodes. We identified key repeated words and phrases and analyzed how these were connected to certain behaviors. The study found specific words that could potentially indicate cheating within couples. By mapping out the most common language patterns, we aimed to predict future actions on the show. This exploration offered insight into how language reflects behavior and relationships, providing a fun yet analytical take on reality TV dynamics.</p>
+                        <p class="article__full--body--technologies">We downloaded all episodes and converted the audio into subtitles. Python was used with the webvtt library to open the subtitles and nltk for natural language processing. This allowed us to identify frequently repeated terms and analyze sentence structures. Further manual processes assigned phrases to individual contestants. Most of the visualizations were designed in Figma, with a few created in R using the ggplot2 library. This approach enabled a comprehensive linguistic analysis of the reality show's dynamics.
+                            <a href="https://www.elconfidencial.com/television/programas-tv/2024-03-15/isla-tentaciones-infidelidad-lenguaje-cuernos_3848863/" class="article__full--body--link">Link to article</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_desplazamientos_obligados.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">Where do your neighbours work? The map of all mandatory journeys for each town in Spain</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
+                </div>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">Where do your neighbours work? The map of all mandatory journeys for each town in Spain</h1>
+                            <p class="article__full--header--title--es">¿Dónde trabajan tus vecinos? El mapa de los trayectos obligados en cada municipio</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
+                    </div>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_movimientos_obligarios.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">Using data from MITMA and ECEPOV, we created a map of Spain’s regular commuting routes for work and study, analyzing the time spent traveling. The article highlighted how the COVID-19 pandemic had altered these patterns. It found that most Spaniards commute by car, often leading them to live on the outskirts of cities. In some cases, high-speed trains (AVE) played a significant role in long-distance commuting. The findings underscored how urban sprawl and a reliance on cars shaped commuting behaviors in Spain. The data also hinted at the broader effects of remote work trends and their impact on future mobility needs.</p>
+                        <p class="article__full--body--technologies">We worked with a CSV file containing commuting data and a geojson file with municipal centroids. These datasets were merged to create connections between municipalities, with Python used to extract lines representing commuting routes and calculate straight-line distances. The primary map was built using Mapbox GL JS, with filters based on travel distances, while additional charts were generated using Datawrapper, enhancing the visualization of commuting patterns across Spain.
+                            <a href="https://www.elconfidencial.com/espana/2024-02-06/mapa-trayectos-trabajo-movilidad-empleo-vecinos_3820621/" class="article__full--body--link">Link to article</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_demanda_calefaccion.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">The map of heat expenditure, building by building: do you pay more that your neighbours?</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
+                </div>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">The map of heat expenditure, building by building: do you pay more that your neighbours?</h1>
+                            <p class="article__full--header--title--es">El mapa del gasto en calefacción, edificio a edificio: ¿pagas más que tus vecinos?</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
+                    </div>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_demanda_calefaccion.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">The Ministry of Housing, in collaboration with a consulting firm, released a tool showing the heating demand for every building in Spain. We used this data to create our own map, incorporating the cost of renovations that would improve energy efficiency in older buildings. The article emphasized that Spain's housing stock is outdated, making it expensive to retrofit for better energy efficiency. The report called attention to the need for government support and awareness to tackle these challenges, especially as energy costs rise. It also discussed the environmental and economic benefits of upgrading Spain’s aging buildings to meet modern energy standards.</p>
+                        <p class="article__full--body--technologies">We scraped the property cadastre webpage using Python's beautiful soup to obtain building data, while heating demand data was extracted from the URBAN3R viewer, also through scraping. The datasets were combined using geopandas, but the large file size required optimization with Mapshaper and other command-line libraries. Additional charts were generated in Datawrapper using data from the 2011 Population and Housing Census, providing a comprehensive analysis of energy efficiency in Spain's building stock.
+                            <a href="https://www.elconfidencial.com/economia/2024-01-11/mapa-eficiencia-energetica-calefaccion-edificio-rehabilitacion_3796426/" class="article__full--body--link">Link to article</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="article js__article">
+                <div class="article__small js__articleSmall">
+                    <img src="../imgs/small_imgs/small_aire_acondicionado.PNG" alt="" class="article__small--img">
+                    <h1 class="article__small--title">Up to 122 with the AC on: this is how what your electricity bill will look like, depending on where you live</h1>
+                    <img src="../imgs/arrow.svg" alt="" class="article__small--arrow">
+                </div>
+                <div class="article__full js__articleFull hidden">
+                    <div class="article__full--header js__fullArrow">
+                        <div class="article__full--header--text">
+                            <h1 class="article__full--header--title">Up to 122 with the AC on: this is how what your electricity bill will look like, depending on where you live</h1>
+                            <p class="article__full--header--title--es">Hasta 122 días al año con el aire puesto: así va a subir la factura en España según dónde vivas</p>
+                        </div>
+                        <img src="../imgs/arrow.svg" alt="" class="article__full--arrow rotate">
+                    </div>
+                    <div class="article__full--body">
+                        <img src="../imgs/full_imgs/full_aire_acondicionado.PNG" alt="" class="article__full--body--img">
+                        <p class="article__full--body--description">With data from AEMET, we analyzed how often air conditioning was used across Spain's provinces during the spring and summer of 2023. Over 122 days, Sevilla emerged as the hottest region, experiencing 82 days with temperatures exceeding 32°C. The study also included future temperature projections using a 20-kilometer grid, showing how heatwaves may intensify in the coming years. The article highlighted the growing need for cooling in homes and businesses due to rising temperatures, pointing to the broader issue of climate change. It also touched on the economic and environmental challenges posed by the increased reliance on air conditioning in Spain.</p>
+                        <p class="article__full--body--technologies">Temperature projections were retrieved via Aemet’s API using Python, while temperature data were queried directly from their database using SQL. Visuals were created in Datawrapper, QGIS (with further editing in Figma for maps), and R (with Figma edits for evolution charts). This allowed for an in-depth examination of air conditioning use and future temperature trends across Spanish provinces.
+                            <a href="https://www.elconfidencial.com/medioambiente/clima/2023-10-03/aumento-temperaturas-aire-acondicionado_3746530/" class="article__full--body--link">Link to article</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
     <footer class="footer">
         <hr class="footer__line">

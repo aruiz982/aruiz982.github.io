@@ -18,14 +18,16 @@ body{
 
 .header{
     position: fixed;
+    z-index: 8000;
 
     width: calc(100% - 60px);
+
 }
 
 .nav__header{
     display: flex;
     gap: 60px;
-    justify-content: center;
+    justify-content: center;    
 
     cursor: pointer;
 
@@ -216,4 +218,12 @@ body{
 
 .rotate{
     transform: rotate(180deg);
+}
+
+.wrap__job__title{
+    margin-top: 100px;
+
+    font-style: italic;
+    font-weight: 500;
+    font-size: 35px;
 }
